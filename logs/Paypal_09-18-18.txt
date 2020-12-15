@@ -1,0 +1,6 @@
+[06:25AM] [172.68.132.169] My E-Mail OK [transaction id: 4BV76239P2026143J]
+[06:25AM] [172.68.132.169] Transaction found [transaction id: 4BV76239P2026143J]
+[06:25AM] [172.68.132.169] Transaction payment status OK [transaction id: 4BV76239P2026143J]
+[06:25AM] [172.68.132.169] Transaction Money OK [transaction id: 4BV76239P2026143J]
+[06:25AM] [172.68.132.169] Transaction currency OK [transaction id: 4BV76239P2026143J]
+[06:25AM] [172.68.132.169] Transaction queries OK [transaction id: 4BV76239P2026143J]

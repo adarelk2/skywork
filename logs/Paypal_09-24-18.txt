@@ -1,0 +1,6 @@
+[07:33AM] [172.68.141.210] My E-Mail OK [transaction id: 38S264093U167494X]
+[07:33AM] [172.68.141.210] Transaction found [transaction id: 38S264093U167494X]
+[07:33AM] [172.68.141.210] Transaction payment status OK [transaction id: 38S264093U167494X]
+[07:33AM] [172.68.141.210] Transaction Money OK [transaction id: 38S264093U167494X]
+[07:33AM] [172.68.141.210] Transaction currency OK [transaction id: 38S264093U167494X]
+[07:33AM] [172.68.141.210] Transaction queries OK [transaction id: 38S264093U167494X]

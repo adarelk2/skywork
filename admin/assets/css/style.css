@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'OpenSansHebrewRegular';
+    src: url('../../libs/fonts/OpenSansHebrewRegular.eot');
+    src: url('../../libs/fonts/OpenSansHebrewRegular.eot') format('embedded-opentype'),
+         url('../../libs/fonts/OpenSansHebrewRegular.woff2') format('woff2'),
+         url('../../libs/fonts/OpenSansHebrewRegular.woff') format('woff'),
+         url('../../libs/fonts/OpenSansHebrewRegular.ttf') format('truetype'),
+         url('../../libs/fonts/OpenSansHebrewRegular.svg#OpenSansHebrewRegular') format('svg');
+}
+
+* {margin:0;padding:0;outline:0;border:0;vertical-align:top;text-decoration:none;list-style:none}
+
+a {color:inherit}
+
+body {font-family:'OpenSansHebrewRegular', arial;background-color:#f6f7f8}
+
+
+input.acceptButtons {   transition: all .6s ease;color: #a2adb5;border: 1px solid #c4ccd2;padding: 5.5px 20px;border-radius: 50px;}
+
+
+
+
+
+.container {position:relative;padding:2%;box-sizing:border-box}
+
+#left-side {float:left;margin:62px 0 0 0;height:auto;padding-bottom:40px;width:calc(100vw - 62px)}
+#left-side .container {height:100%}
+
+img {max-width:100%}
+
+.clear {clear:both}
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+
+.desktop {display:block}
+.mobile {display:none}
+
+aside {z-index:999;background:#286f9e;height:100vh;position:fixed;top:0;right:0;width:62px}
+aside ul {float:right;width:100%}
+aside ul li {float:right;width:100%}
+aside ul li a {float:right;width:100%;line-height:50px;height:50px;position:relative}
+aside ul li a p {opacity:0;font-size:0.9em;position:absolute;right:55px;top:50%;transform:translateY(-50%);width:0;line-height:30px;height:30px;background:#323232;color:#fff;text-align:center;border-radius:4px}
+aside ul li a p svg {position:absolute;top:50%;right:-12.4px;transform:translateY(-50%);max-width:14px;max-height:14px;fill:#323232}
+aside ul li a svg {transition:all .6s ease;max-width:28px;max-height:28px;fill:#fff;position:absolute;top:50%;transform:translateY(-50%) translateX(50%);right:50%}
+aside ul li:hover a > svg, li#focus_menu a svg {fill:#cddc39}
+aside ul li.logo {margin:15px 0 40px 0}
+aside ul li.logo img {position:absolute;top:50%;right:50%;transform:translateY(-50%) translateX(50%) rotate(90deg);-webkit-transform:translateX(50%) translateY(-50%) rotate(90deg);-moz-transform:translateX(50%) translateY(-50%) rotate(90deg)}
+aside ul li.logo a {height:62px;line-height:62px}
+
+header {z-index:99;background:#fff;top:0;left:0;width:calc(100vw - 62px);height:62px;position:fixed;box-shadow:0 0 4px rgba(0, 0, 0, 0.25)}
+header > ul {float:right;line-height:62px;padding:0 2% 0 0}
+header > ul > li {float:right}
+header > ul > li > a {float:right;padding:0 20px 0 0;color:#286f9e}
+header #header-left {float:left;margin:0 0 0 1%;height:100%;position:relative}
+header #header-left svg {max-width:18px;max-height:18px;fill:#286f9e}
+header #header-left #header-menubutton {width:50px;position:fixed;top:0;right:0;height:62px}
+header #header-left #header-menubutton > svg {position:absolute;top:50%;right:50%;transform:translateY(-50%) translateX(50%)}
+header #header-left #header-notifications {float:right;height:100%;position:relative;width:50px}
+header #header-left #header-notifications > p {position:absolute;top:50%;right:50%;transform:translateY(calc(-50% - 8px)) translateX(calc(50% + 8px));background:#ff0000;padding:1px 5px;border-radius:50%;color:#fff;font-size:0.7em}
+header #header-left #header-notifications > svg {position:absolute;top:50%;right:50%;transform:translateY(-50%) translateX(50%)}
+header #header-left #header-notifications ul {width:350px}
+header #header-left #header-notifications ul li {padding:0;height:70px;border-bottom:1px solid #ebebeb}
+header #header-left #header-notifications ul li:first-child {height:32px;padding:0 10px}
+header #header-left #header-notifications ul li:first-child p {color:#000;padding:0;width:100%;line-height:2.2}
+header #header-left #header-notifications ul li .user-avatar {float:right;width:20%;height:100%;position:relative}
+header #header-left #header-notifications ul li .user-avatar img {max-width:70%;position:absolute;top:50%;right:50%;transform:translateY(-50%) translateX(50%)}
+header #header-left #header-notifications ul li > p {float:right;width:80%;box-sizing:border-box;color:#babbbe;line-height:1.9}
+header #header-left #header-notifications ul li > p a {color:inherit}
+header #header-left #header-userbar {float:right;position:relative;width:100px;cursor:pointer;}
+header #header-left #header-userbar > p {line-height:62px;font-size:0.9em;color:#1b3445;position:relative;float:right}
+header #header-left #header-userbar > p svg {max-width:10px;max-height:10px;position:absolute;top:50%;transform:translateY(-50%);left:-12px;fill:currentColor}
+header #header-left div {cursor:pointer}
+header #header-left div ul {display:none;position:absolute;top:62px;left:0;width:160px;box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);background:#fff;}
+header #header-left div ul li {float:right;width:100%}
+header #header-left div ul li:first-child {height:auto;background:#f6f7f8;line-height:32px;font-size:0.9em;padding:0 10px;box-sizing:border-box}
+header #header-left div ul li {transition:all .6s ease;box-sizing:border-box;padding:0 10px;height:40px;float:right;width:100%}
+header #header-left div ul li > a {position:relative;color:#1b3445;height:40px;float:right;width:100%;line-height:40px;box-sizing:border-box;padding:0 25px}
+header #header-left div ul li:hover {background:#f6f7f8}
+header #header-left div ul li a svg {fill:currentColor;position:absolute;top:50%;transform:translateY(-50%);right:0;max-width:16px;max-height:16px}
+
+.block {float:right;width:100%;background:#fff;border-radius:2px;box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);box-sizing:border-box;margin-top: 10px;}
+
+.block .block-title {float:right;width:100%;border-bottom:1px solid #d4dade;padding:1%;box-sizing:border-box}
+.block .block-title > h1 {float:right}
+.block .block-title > a {transition:all .6s ease;color:#a2adb5;border:1px solid #c4ccd2;padding:5.5px 20px;border-radius:50px;float:left}
+.block .block-title > a:hover, .block .block-title > a:focus {box-shadow:0 0 5px 0 rgba(0, 0, 0, 0.25)}
+.block .block-inner {padding:1%;float:right;width:100%;box-sizing:border-box}
+
+.block form {float:right;width:60%}
+
+.block .input-field {float:right;width:100%;margin-bottom:20px;position:relative;margin-top:20px}
+.block .input-field label {float:right;width:100%;font-size:0.9em;transition:all .6s ease;color:#000;position:absolute;top:15px;right:0;padding:0 30px;box-sizing:border-box}
+.block .input-field label.active {color:#286f9e;top:-10px}
+.block .input-field input[type=text], .block .input-field select, .block .input-field input[type=email], .block .input-field input[type=password] {transition:all 1s ease;border-bottom:1px solid #a2adb5;background:transparent;font-family:'OpenSansHebrewRegular', arial;float:right;width:100%;height:45px;border-radius:10px;position:relative}
+.block .input-field textarea {margin-top:10px;padding:15px 10px 0px 10px;box-sizing:border-box;transition:all 1s ease;border-bottom:1px solid #a2adb5;background:transparent;font-family:'OpenSansHebrewRegular', arial;float:right;width:100%;height:auto;border-radius:10px;position:relative}
+.block .input-field input[type=text]:focus, .block .input-field input[type=email]:focus, .block .input-field select:focus, .block .input-field input[type=password]:focus {border-bottom:2px solid #286f9e}
+.block .input-field textarea:focus {border-bottom:2px solid #286f9e}
+.block .input-field .submit-button {height:44px;line-height:44px;border-radius:100px;color:#fff;padding:0 20px;float:left;background:#286f9e;font-family:'OpenSansHebrewRegular', arial}
+
+.block .input-field.input-field-2 {width:48% !important;box-sizing:border-box}
+
+.row {float:right;width:100%;position:relative}
+.row-remark {position:absolute;top:50%;right:105%;width:500px;transform:translateY(-50%)}
+.row-remark svg {width:18px;height:18px;float:right}
+.row-remark p {line-height:18px;padding-right:10px;float:right;font-size:0.8em}
+.pull-left {float:left !important}
+.pull-right {float:right !important}
+
+.block-inner .ticket-con {border-bottom:1px solid #ededed;padding:0 0 10px 0;margin-bottom:10px}
+
+.button_tickets {height:36px !important;padding:0 20px !important;border-radius:50px !important;line-height:36px !important;color:#fff !important;background:#286f9e !important;cursor:pointer !important;-webkit-appearance:none;}
+
+.block-title .input-field {float:left;width:20%;margin:0}
+
+#login-page .button_tickets {display:block;margin:0px auto}
+
+#login-page .error {position:fixed;bottom:0;right:0;left:0;width:100%;height:62px;background:linear-gradient(rgb(228, 58, 21), rgb(230, 82, 69))}
+#login-page .error #error-right {background:#fff;width:70px;height:100%;float:right;position:relative}
+#login-page .error #error-right svg {width:40px;height:40px;position:absolute;top:50%;transform:translateY(-50%) translateX(50%);right:50%}
+#login-page .error p {line-height:62px;color:#fff;padding:0 20px 0 0;float:right}
+#login-page .error #error-close {position:absolute;top:50%;transform:translateY(-50%);left:10px;cursor:pointer;width:20px;height:20px;border-radius:50px;background:#fff;opacity:0.8;-webkit-opacity:0.8;-moz-opacity:0.8;transition:all .2s linear}
+#login-page .error:hover #error-close {opacity:1;-webkit-opacity:1;-moz-opacity:1}
+#login-page .error #error-close svg {fill:#000;width:10px;height:10px;position:absolute;top:50%;transform:translateY(-50%) translateX(50%);right:50%}
+
+#chat {float:right;width:100%}
+#chat .chat-message {float:right;width:100%;text-align:right; margin-top: 5px;}
+#chat .chat-message img {float:right}
+#chat .message-2 {float:right;width:100%}
+#chat .message-2 img {float:left}
+#chat .chat-message .chat-message-inner {float:right;width:auto;background:#1282cc;padding:5px;box-sizing:border-box;color:#fff;border-radius:4px;margin:2px 10px;position:relative}
+#chat .message-2 .chat-message-inner {float:left;width:auto;background:#8798a3}
+#chat .chat-message .chat-message-inner-top {float:right;width:100%;padding:5px 2.5%;margin-bottom:5px;box-sizing:border-box;border-bottom:1px solid #ededed}
+#chat .chat-message .chat-message-inner-top p {font-size:1.1em}
+#chat .chat-message .chat-message-inner-text {float:right;width:100%;padding:5px 2.5% 5px 2.5%;box-sizing:border-box}
+#chat .chat-message .chat-message-inner-time {float:right;width:100%;box-sizing:border-box;padding:0 2.5%;font-size:0.8em;text-align:left}
+#chat .chat-message .chat-message-inner-time p svg {width:16px;height:16px;fill:currentColor;margin-left:3px}
+#chat .chat-message .chat-message-inner > svg {width:16px;height:16px;fill:#1282cc;position:absolute;top:25px;right:-10px;transform:rotate(-90deg)}
+#chat .message-2 .chat-message-inner > svg {width:16px;height:16px;fill:#8798a3;position:absolute;top:25px;left:-10px;right:auto;transform:rotate(90deg)}
+
+.modal {position:fixed;top:0;right:0;left:0;bottom:0;z-index:9999;background:rgba(0, 0, 0, 0.6)}
+.modal .container {padding:15%}
+.block h1 {font-size:1.4em}
+
+.block table {width:95%;margin:0px auto;border-collapse:collapse}
+.block table thead {border-bottom:1px solid #eeeeee}
+.block table tfoot {border-top:1px solid #eeeeee}
+.block table th, .block table td {text-align:right;padding:10px 10px;font-size:0.9em}
+.block table a {color:#778c9a;text-decoration:underline}
+.block table a.button_tickets {float:right;text-decoration:none;position:relative;margin-left:5px;}
+.block table a.editsvg {float:right;position:relative;width:30px;height:30px}
+.block table a.editsvg svg {width:20px;height:20px;fill:#000;position:absolute;top:50%;transform:translateY(-50%) translateX(50%);right:50%}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.notice {
+  position: relative;
+  margin: 1em;
+  background: #F9F9F9;
+  padding: 1em 1em 1em 2em;
+  border-right: 4px solid #DDD;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+}
+
+.notice:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  right: -17px;
+  background-color: #DDD;
+  color: #FFF;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: Georgia;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.error {
+  border-color: #FF4136;
+}
+
+.error:before {
+  content: "\26A0";
+  font-family: "Arial";
+  font-weight: normal;
+  font-size: 24px;
+  background-color: #FF4136;
+}
+
+.login-logo {float:right;width:100%;text-align:center;margin:10px 0}
+.results tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+.results tr[visible='true']{
+  display:table-row;
+}
+
+.counter {padding: 12px 0px 0px 70px;color:#000;display:block;float:left;}
+
+#game-list { margin-top: 20px; float: right;}
+.game_box {width: 150px; height: 80px; float: right; margin-right: 10px; text-align: center;border-radius: 5px;vertical-align: middle;  margin-top: 7px; color: white; font-weight: bold;font-size: 18px;}
+.no_checked {background: rgba(0,0,0,0.5); height: 100%;float: right;width: 100%; line-height: 80px; color: white;}
+.no_checked a:link {color: white;}
+.no_checked a:visited {color: white;}
+.no_checked a:hover {color: white;}
+.no_checked a:active {color: white;}
+
+
+@media (max-width: 768px) {
+	.mobile {display:block}
+	.desktop {display:none}
+	
+	aside {top:auto;bottom:0;width:100%;height:62px}
+	aside ul li.logo {margin:0 10px}
+	aside ul li.logo img {transform:translateY(-50%) translateX(50%);-webkit-transform:translateY(-50%) translateX(50%);-moz-transform:translateY(-50%) translateX(50%)}
+	aside ul li {float:right;width:10vw;height:62px}
+	aside ul li a {line-height:62px;height:62px}
+	aside ul li a svg {max-width:45%;max-height:none}
+	
+	header {width:100%}
+	
+	.block form {width:100%}
+	
+	.block .input-field label {padding:0 5px;font-size:0.7em}
+	
+	#left-side {float:right;width:100%}
+	.block {padding:2%}
+	.block h1 {margin-bottom:10px}
+	
+	#login-page .error p {font-size:0.7em}
+	
+	.block table a.button_tickets {font-size:0;padding:0 5px}
+	.block table a.button_tickets:before {content:'צפה';font-size:1rem}
+	
+	header #header-left #header-notifications ul {position:fixed;width:100vw}
+	
+	#mobilemenu {box-sizing:border-box;display:none;background:#fff;position:fixed;top:0;left:0;width:85vw;box-shadow:4px 0 4px rgba(0, 0, 0, .25);bottom:0;height:100vh;z-index:9999}
+	#mobilemenu ul {float:right;width:100%;margin-top:20px}
+	#mobilemenu ul li {height:40px;line-height:40px;float:right;width:100%}
+	#mobilemenu ul li a {height:40px;line-height:40px;float:right;width:100%;padding:0 10%;box-sizing:border-box;color:#000}
+	#turing-panel-blur {display:none;position:fixed;top:0;right:0;left:0;bottom:0;width:100vw;height:100vh;background:rgba(27, 52, 69, 0.4);z-index:9998}
+	
+	.row-remark {display:none}
+	
+	.counter {padding:12px 9px 0px 0;float:right}
+	
+	.block-title .input-field {width:35%}
+}
